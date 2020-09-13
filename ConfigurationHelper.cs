@@ -17,7 +17,8 @@ namespace WebAdvert.SearchWorker
                 if (_configuration == null)
                 {
                     _configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
-                                .AddJsonFile("appsettings.josn").Build();
+                                .AddJsonFile("appsettings.json").Build();
+                  //  _configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
                 }
                 return _configuration;
             }

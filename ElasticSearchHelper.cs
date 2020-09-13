@@ -16,7 +16,8 @@ namespace WebAdvert.SearchWorker
             if (_client == null)
             {
                 var url = config.GetSection("ES").GetValue<string>("url");
-                var settins = new ConnectionSettings(new Uri(url)).DefaultIndex("adverts");
+                var settins = new ConnectionSettings(new Uri(url)).DefaultIndex("adverts")
+                    .DefaultMappingFor<AdvertType>(m=> m.IdProperty(x=> x.Id)); //map if we want
                 _client = new ElasticClient(settins);
             }
 

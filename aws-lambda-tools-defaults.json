@@ -1,0 +1,16 @@
+
+{
+    "region" : "us-west-2",
+    "profile" : "user_upload",
+    "configuration" : "Release",
+    "framework"     : "netcoreapp3.1",
+    "function-name" : "searchworker3",
+    "function-description" : "",
+    "function-handler"     : "WebAdvert.SearchWorker::WebAdvert.SearchWorker.SearchWorker::Function",
+    "function-memory-size" : 512,
+    "function-role"        : "arn:aws:iam::181253919680:role/SearchWorkerRole",
+    "function-timeout"     : 15,
+    "function-runtime"     : "dotnetcore3.1",
+    "tracing-mode"         : "PassThrough",
+    "environment-variables" : ""
+}
